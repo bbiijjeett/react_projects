@@ -173,11 +173,20 @@ Hero
 
 .hero {
   min-height: 100vh;
-  background: var(--clr-primary-5);
+  /* background: var(--clr-primary-5); */
+  
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+#hero_backgroundVideo {
+  position:absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+
 .hero-banner {
   text-align: center;
   color: var(--clr-white);
@@ -208,13 +217,17 @@ Hero
 @media screen and (min-width: 768px) {
   .hero {
     background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
-      url('./images/main.jpeg') center/cover no-repeat;
+      url('./images/main.jpg') center/cover no-repeat;
   }
   .hero-banner {
     padding: 0;
   }
   .hero-banner p {
     max-width: 45rem;
+  }
+
+  #hero_backgroundVideo {
+    display:none;
   }
 }
 /*
