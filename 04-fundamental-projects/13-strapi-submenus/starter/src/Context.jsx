@@ -11,6 +11,7 @@ export const AppProvider = ({ children }) => {
   const closeSidebar = () => {
     setIsSidebarOpen(false);
   };
+
   return (
     <AppContext.Provider
       value={{ isSidebarOpen, openSidebar, closeSidebar, pageId, setPageId }}
@@ -18,8 +19,10 @@ export const AppProvider = ({ children }) => {
       {children}
     </AppContext.Provider>
   );
-};
+  
+}
 
 export const useGlobalContext = () => {
-  return useContext(AppContext);
+    return useContext(AppContext);
 };
+  

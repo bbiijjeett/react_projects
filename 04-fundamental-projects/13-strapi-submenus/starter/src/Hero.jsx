@@ -1,3 +1,5 @@
+import React from 'react'
+
 const Hero = () => {
   return (
     <div className='hero-container'>
@@ -11,6 +13,7 @@ const Hero = () => {
         </p>
       </div>
     </div>
-  );
-};
-export default Hero;
+  )
+}
+
+export default Hero

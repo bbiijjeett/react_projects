@@ -1,6 +1,8 @@
+import React from 'react';
 import { FaTimes } from 'react-icons/fa';
 import { useGlobalContext } from './Context';
 import sublinks from './data';
+
 const Sidebar = () => {
   const { isSidebarOpen, closeSidebar } = useGlobalContext();
   return (
@@ -10,7 +12,7 @@ const Sidebar = () => {
           <FaTimes />
         </button>
         <div className='sidebar-links'>
-          {sublinks.map((item) => {
+        {sublinks.map((item) => {
             const { links, page, pageId } = item;
             return (
               <article key={pageId}>
@@ -32,6 +34,7 @@ const Sidebar = () => {
         </div>
       </div>
     </aside>
-  );
-};
-export default Sidebar;
+  )
+}
+
+export default Sidebar

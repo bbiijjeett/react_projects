@@ -353,6 +353,7 @@ Sidebar
   /* toggle */
   opacity: 0;
   visibility: hidden;
+
 }
 .show-sidebar {
   opacity: 1;
@@ -360,6 +361,8 @@ Sidebar
   transition-property: opacity;
   transition-duration: 1s;
 }
+
+
 /* toggle class */
 
 .sidebar-container {

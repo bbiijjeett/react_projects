@@ -1,3 +1,4 @@
+import React from 'react';
 import { useGlobalContext } from './Context';
 import sublinks from './data';
 
@@ -5,7 +6,7 @@ const NavLinks = () => {
   const { setPageId } = useGlobalContext();
   return (
     <div className='nav-links'>
-      {sublinks.map((item) => {
+      {sublinks.map((item)=>{
         const { pageId, page } = item;
         return (
           <button
@@ -18,6 +19,7 @@ const NavLinks = () => {
         );
       })}
     </div>
-  );
-};
-export default NavLinks;
+  )
+}
+
+export default NavLinks
